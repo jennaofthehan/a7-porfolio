@@ -8,7 +8,7 @@ var ProgressItem = React.createClass({
 		var images = this.props.images.split(",");
 		return (
 			<div className="group">
-				<h2 className="productionGroup">{this.props.title}</h2>
+				<h1 className="productionGroup">{this.props.title}</h1>
 				<p className="detail">{this.props.detail}</p>
 				{
 					images.map(function(img, i){
@@ -17,6 +17,8 @@ var ProgressItem = React.createClass({
 							)
 					})
 				}
+				<br/>
+				<br/>
 			</div>
 		);
 	}

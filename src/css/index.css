@@ -4,6 +4,20 @@ body {
   font-family: sans-serif;
 }
 
+.landingPage{
+	text-align: center;
+}
+
+h1, h2, h3, h4{
+	color:#088EBB;
+	font-family: fantasy;
+}
+
+p{
+	color: #C4D2D7;
+	font-family: roboto, sans-serif;
+}
+
 .profilePic{
 	height:200px;
 	width:200px;
@@ -17,7 +31,7 @@ body {
 }
 
 .group{
-	margin:10px auto;
+	margin:30px auto;
 	text-align:center;
 }
 
@@ -45,4 +59,24 @@ body {
 .link{
 	margin-right:5%;
 	text-decoration: none;
+	color:#088EBB;
+}
+
+.pageTranstion-enter {
+  opacity: 0.01;
+}
+
+.pageTransition-enter.pageTransition-enter-active {
+  opacity: 1;
+  transition: opacity 500ms ease-in;
+}
+
+
+.pageTransition-appear {
+  opacity: 0.01;
+}
+
+.pageTransition-appear.pageTransition-appear-active {
+  opacity: 1;
+  transition: opacity .5s ease-in;
 }

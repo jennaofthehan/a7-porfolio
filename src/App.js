@@ -3,6 +3,7 @@ import React from 'react';
 import './css/index.css';
 import { Link } from 'react-router';
 import '../node_modules/font-awesome/css/font-awesome.css'
+import ReactCSSTransitionGroup from 'react-addons-css-transition-group'
 
 
 var App = React.createClass({
@@ -19,13 +20,12 @@ var App = React.createClass({
 						<ReactCSSTransitionGroup
 							component="div"
 							transitionName="pageTransition"
+							transitionAppear={true}
+      						transitionAppearTimeout={500}
 							transitionEnterTimeout={500}
-							transitionLeaveTimeout={400}
+							transitionLeave={false}
 						>
-							{React.cloneElement(this.props.childer, {
-								key:location.pathname
-							})}
-						
+						{this.props.children}
 						</ReactCSSTransitionGroup>
 					</div>
 				</div>

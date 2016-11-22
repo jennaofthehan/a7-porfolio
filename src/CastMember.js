@@ -10,7 +10,7 @@ var CastMember = React.createClass({
 		return (
 			<div className="card">
 				<img src={source} role="presentation" className="profilePic"/>
-				<h3 className="castName">{this.props.name}</h3>
+				<h2 className="castName">{this.props.name}</h2>
 				<p>{this.props.role}</p>
 			</div>
 		);
