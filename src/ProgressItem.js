@@ -1,5 +1,6 @@
 // Page of quotes to show
 import React from 'react';
+import ReactCSSTransitionGroup from 'react-addons-css-transition-group'
 
 // PageOne Component
 var ProgressItem = React.createClass({
@@ -7,6 +8,14 @@ var ProgressItem = React.createClass({
 	render() {
 		var images = this.props.images.split(",");
 		return (
+			<ReactCSSTransitionGroup
+							component="div"
+							transitionName="pageTransition"
+							transitionAppear={true}
+      						transitionAppearTimeout={500}
+							transitionEnterTimeout={500}
+							transitionLeave={false}
+						>
 			<div className="group">
 				<h1 className="productionGroup">{this.props.title}</h1>
 				<p className="detail">{this.props.detail}</p>
@@ -20,6 +29,7 @@ var ProgressItem = React.createClass({
 				<br/>
 				<br/>
 			</div>
+			</ReactCSSTransitionGroup>
 		);
 	}
 });
