@@ -21,5 +21,6 @@
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
-  }
+  },
+  "homepage": "http://students.washington.edu/jenna3/info343/a7-portfolio-jennaofthehan/a7-porfolio/"
 }
