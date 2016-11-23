@@ -19,7 +19,7 @@ var Cast = React.createClass({
 	// Render a <Quote> element for each element in the state
 	render() {
 		return (
-			<div>
+			<div className="flexbox-container">
 				{
 					this.state.cast.map(function(member, i){
 						return (

@@ -1,11 +1,48 @@
+@import url('https://fonts.googleapis.com/css?family=Fredericka+the+Great|Mountains+of+Christmas|Zeyada|Cabin|Josefin+Sans');
 body {
   margin: 0;
   padding: 0;
   font-family: sans-serif;
+  background: linear-gradient(#2D536E, #050125);
+  background-attachment: fixed;
+  height:100%;
+}
+
+.navbar{
+	background: #34647D;
+	position: fixed;
+	z-index: 1;
+	top:-2px;
+}
+
+.children{
+	padding-top: 60px;
+	top:200px;
 }
 
 .landingPage{
 	text-align: center;
+}
+
+.josephine{
+	font-family:Josefin Sans;
+}
+
+hr{
+	opacity:0.2;
+}
+
+.progressDiv{
+	  background-image:url('background_light.png');
+	  background-attachment:fixed;
+	  background-size:300% 100%;
+	  background-repeat: repeat-x;
+	  animation: animatedBackground 80s linear infinite;
+}
+
+@keyframes animatedBackground {
+	from { background-position: 0 0; background-position: }
+	to { background-position: 100% 0; }
 }
 
 h1, h2, h3, h4{
@@ -15,7 +52,8 @@ h1, h2, h3, h4{
 
 p{
 	color: #C4D2D7;
-	font-family: roboto, sans-serif;
+	font-family: Cabin;
+	text-align:center;
 }
 
 .profilePic{
@@ -24,11 +62,60 @@ p{
 	background-size:cover;
 }
 
-.progressPic{
-	height:400px;
-	margin:10px auto;
-	display:block;
+.role{
+	width:300px;
+	height:48px;
+	margin: 10px auto;
+	font-family:Cabin;
+	font-variant: small-caps;
 }
+
+@media (min-width: 768px){
+	.progressPic{
+		width:400px;
+		margin:10px auto;
+		display:block;
+	}
+
+	.detail{
+		width:400px;
+		margin:20px auto;
+	}
+
+	.card{
+		flex-basis:80%;
+		margin:10px 15px;
+	}
+}
+
+@media (min-width: 992px){
+
+	.progressPic{
+		width:600px;
+		margin:10px auto;
+		display:block;
+	}
+
+	.detail{
+		width:600px;
+		margin:25px auto;
+	}
+
+	.card{
+		margin: 10px 20px;
+		flex-basis:35%;
+	}
+}
+
+.flexbox-container{
+	display:flex;
+	flex-wrap: wrap;
+	align-items:center;
+	justify-content:center;
+}
+
+
+
 
 .group{
 	margin:30px auto;
@@ -38,33 +125,61 @@ p{
 
 
 .navbar {
-    border-bottom:1px solid grey;
+    border-bottom:1px solid #ECDBB2;
     width:100%;
     height:50px;
     padding-top:14px;
     padding-left:20px;
     margin-bottom:15px;
+    text-align:center;
 }
 
 .card{
-	margin: 50px auto;
+	padding: 25px 15px 5px 15px;
 	text-align: center;
-
+	background-color:#088EBB;
+	margin-top:20px;
+	margin-bottom:10px;
+	box-shadow: 0 0 5px #fff, 0 0 15px #fff, 0 0 30px #228DFF, 0 0 50px #228DFF, 0 0 80px #228DFF;
 }
 
 .castName{
+	color:#B765CA;
 	margin-bottom:0;
+	margin-top:5px;
+	text-shadow: 0 0 4px #fff, 0 0 12px #fff, 0 0 30px #B765CA, 0 0 40px #B765CA, 0 0 70px #B765CA;
+	font-family: Mountains of Christmas;
+	font-size:1.9em;
+}
+
+#studio{
+	font-variant:small-caps;
+	font-size: 1.8em;
+	font-weight: bold;
 }
 
 .link{
-	margin-right:5%;
+	margin-left:3%;
+	margin-right:3%;
 	text-decoration: none;
-	color:#088EBB;
+	color:#FDE19C;
+	font-family: Mountains of Christmas;
+
 }
 
 .link:hover{
-	font-size:110%;
-	transition: font-size .2s ease-in;
+	color:white;
+	animation: neon3 0.5s alternate infinite;
+}
+
+
+@keyframes neon3 {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #FEEBA3, 0 0 70px #FEEBA3, 0 0 80px #FEEBA3, 0 0 100px #FEEBA3, 0 0 150px #FEEBA3;
+  }
+  to {
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #FEDE84, 0 0 35px #FEDE84, 0 0 40px #FEDE84, 0 0 50px #FEDE84, 0 0 75px #FEDE84;
+  }
 }
 
 .pageTranstion-enter {
@@ -84,4 +199,47 @@ p{
 .pageTransition-appear.pageTransition-appear-active {
   opacity: 1;
   transition: opacity .5s ease-in;
+}
+
+
+.beginning{
+	background-image: url('glow.png');
+	background-repeat: no-repeat;
+	background-position: 50% 40%;
+	font-family:Mountains of Christmas;
+	font-size:3em;
+	font-weight: bold;
+	padding:20px;
+	animation: pulse 1.5s alternate infinite;
+}
+
+@keyframes pulse{
+	from{
+		opacity:0.6;
+		background-size:22%;
+	}
+	to{
+		opacity: 0.9;
+		background-size:23%;
+	}
+}
+
+
+.step{
+	font-family: Zeyada;
+	font-size: 1.8em;
+	width: 90%;
+	margin: 15px auto;
+	color:#FEEAB8;
+}
+
+.stepsDiv{
+	margin-bottom: 80px;
+	height:100%;
+}
+
+.star{
+	width:14px;
+	margin-right:5px;
+	margin-left:5px;
 }

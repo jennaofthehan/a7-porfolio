@@ -9,20 +9,20 @@ var CastMember = React.createClass({
 	render() {
 		var source = "imgs/"+this.props.pic+".jpg";
 		return (
-			<ReactCSSTransitionGroup
-							component="div"
-							transitionName="pageTransition"
-							transitionAppear={true}
-      						transitionAppearTimeout={500}
-							transitionEnterTimeout={500}
-							transitionLeave={false}
-						>
 			<div className="card">
-				<img src={source} role="presentation" className="profilePic"/>
-				<h2 className="castName">{this.props.name}</h2>
-				<p>{this.props.role}</p>
+				<ReactCSSTransitionGroup
+								component="div"
+								transitionName="pageTransition"
+								transitionAppear={true}
+	      						transitionAppearTimeout={500}
+								transitionEnterTimeout={500}
+								transitionLeave={false}
+							>
+					<img src={source} role="presentation" className="profilePic"/>
+					<h2 className="castName">{this.props.name}</h2>
+					<p className="role">{this.props.role}</p>
+				</ReactCSSTransitionGroup>
 			</div>
-			</ReactCSSTransitionGroup>
 		);
 	}
 });

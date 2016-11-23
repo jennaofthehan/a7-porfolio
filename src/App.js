@@ -12,8 +12,8 @@ var App = React.createClass({
 		return (
 				<div className="App">
 					<div className="navbar">
-						<Link className="link" activeClassName='active' to="/"><i className="fa fa-home"></i></Link>
 						<Link className="link" activeClassName='active' to="/Cast">Cast</Link>
+						<Link className="link" activeClassName='active' to="/" id="studio">Studio L</Link>
 						<Link className="link" activeClassName='active' to="/Progress">Progress</Link>
 					</div>
 					<div className="children">

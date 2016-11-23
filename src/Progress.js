@@ -20,7 +20,7 @@ var Progress = React.createClass({
 	// Render a <Quote> element for each element in the state
 	render() {
 		return (
-			<div>
+			<div className="progressDiv">
 				{
 					this.state.progress.map(function(progress, i){
 						return (

@@ -18,7 +18,7 @@ var ProgressItem = React.createClass({
 						>
 			<div className="group">
 				<h1 className="productionGroup">{this.props.title}</h1>
-				<p className="detail">{this.props.detail}</p>
+				<p className="detail josephine">{this.props.detail}</p>
 				{
 					images.map(function(img, i){
 						return(
