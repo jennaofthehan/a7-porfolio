@@ -22,7 +22,7 @@ var ProgressItem = React.createClass({
 				{
 					images.map(function(img, i){
 						return(
-							<img src={"imgs/"+img+".jpg"} key={i} className="progressPic"/>
+							<img src={"imgs/"+img+".JPG"} key={i} className="progressPic"/>
 							)
 					})
 				}
